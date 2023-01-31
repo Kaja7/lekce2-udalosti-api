@@ -29,6 +29,18 @@ function zastavAudio() {
     prehravac.pause();
 }
 
+function volume0() {
+    prehravac.volume = 0.0
+}
+
+function volumeNapul() {
+    prehravac.volume = 0.5
+}
+
+function volumeHlasite() {
+    prehravac.volume = 1.0
+}
+
 function resetAudio() {
-    prehravac.currentTime() = 0;
+    prehravac.currentTime = 0;
 }
