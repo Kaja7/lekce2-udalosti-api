@@ -1,17 +1,25 @@
 // tady je místo pro náš program
 
 //při najetí myší text ztuční
+
+let odstavec = document.querySelector(".odstavec");
+
 function priNajeti() {
     let odstavec = document.querySelector(".odstavec");
     odstavec.style.fontWeight = "bold"
 }
 
-let odstavec = document.querySelector(".odstavec");
-
-function cervenyPoKliknuti(event) {
-    odstavec.classlist.add(".cervena");
-    console.log(event);
+function priOdjeti() {
+    let odstavec = document.querySelector(".odstavec");
+    odstavec.style.fontWeight = "normal"
 }
+
+
+function prepniZcervenani(text) {
+    odstavec.classList.toggle('cervena');
+}
+
+
 
 function vetsiPoKliknuti(event) {
     odstavec.style.fontSize = "17px";
